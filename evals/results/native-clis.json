@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-13",
+  "case": "A",
+  "claude": {
+    "version": "2.1.263",
+    "executable": "/home/ec2-user/.npm-global/bin/claude",
+    "invocation": "/human-ton with project settings, read tools only, no MCP or session persistence",
+    "status": "invocation_pass",
+    "turns": 4,
+    "cost_usd": 0.1616975,
+    "model_ids": [
+      "claude-opus-5[1m]"
+    ],
+    "result": "이번 시범 운영은 2026년 9월 2일부터 9월 9일까지 진행됐습니다. 총 48명 중 31명이 설문에 응답했습니다. 응답자 61%가 검색이 편해졌다고 답했지만, 업무 시간이 줄었는지는 확인되지 않았습니다. 담당자는 “정식 도입 여부는 아직 정해지지 않았습니다.”라고 밝혔습니다. 참가자 의견을 모아 앞으로의 개선 방향을 검토해 볼 수 있을 것으로 보입니다.",
+    "collected_literals_unchanged": true,
+    "skill_sha256": "87b25f24582b254924f24247382805809cdb32a23f8fdd2e4da4ff4dd9339e23"
+  },
+  "kiro": {
+    "version": "2.21.2",
+    "invocation": "kiro-cli chat --agent human-ton --no-interactive --trust-tools=read,fs_read",
+    "status": "invocation_pass",
+    "files_read": [
+      "SKILL.md",
+      "references/korean-editing.md",
+      "references/rhythm.md",
+      "references/voice-and-genre.md",
+      "references/examples.md"
+    ],
+    "result": "이번 시범 운영은 2026년 9월 2일부터 9월 9일까지 진행됐습니다. 총 48명 중 31명이 설문에 답했습니다. 응답자의 61%는 검색이 편해졌다고 했지만, 업무 시간이 줄었는지는 확인되지 않았습니다. 담당자는 “정식 도입 여부는 아직 정해지지 않았습니다.”라고 밝혔습니다. 참가자 의견을 모아 앞으로 무엇을 개선할지 검토할 수 있을 것으로 보입니다.",
+    "collected_literals_unchanged": true,
+    "skill_sha256": "345e2089122c1640fbcedde8887670629837beb6f8f4847a30f0537312b5464f"
+  },
+  "review": "Parent agent compared the answers to case A: numbers, dates, direct quote content, uncertainty, and conditional review were retained. This is a small smoke test, not a general quality guarantee.",
+  "iterations": [
+    "Claude --bare returned Unknown command: /human-ton with zero API cost; normal project-skill discovery succeeded.",
+    "The first Kiro agent omitted tools, so it could not read the skill. Explicit read/write tools with read-only preapproval fixed loading.",
+    "An unnecessary additional-action adverb appeared in native output. Added a grounded time/degree check, then an explicit generic example. Latest Kiro output retained the original scope.",
+    "Claude native output was checked after the general scope check; Kiro was rerun after the final explicit example. The per-host skill hashes record those revisions."
+  ]
+}

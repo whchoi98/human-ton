@@ -1,0 +1,14 @@
+[
+  {"prompt": "이 글을 자연스럽게 윤문해 줘.", "should_use": true},
+  {"prompt": "AI 티를 줄이고 문장 호흡을 살려 줘.", "should_use": true},
+  {"prompt": "번역된 한국어의 번역투만 다듬어 줘.", "should_use": true},
+  {"prompt": "Polish this English paragraph without changing my voice.", "should_use": true},
+  {"prompt": "내 글의 말투를 살리면서 연결을 매끄럽게 해 줘.", "should_use": true},
+  {"prompt": "이 공지를 해요체로 바꿔 줘.", "should_use": true},
+  {"prompt": "이 글은 AI가 썼는지 판정해 줘.", "should_use": false},
+  {"prompt": "이 영문 기사를 한국어로 번역해 줘.", "should_use": false},
+  {"prompt": "이 문서를 세 문장으로 요약해 줘.", "should_use": false},
+  {"prompt": "띄어쓰기 오류만 고쳐 줘.", "should_use": false},
+  {"prompt": "요즘 AI 뉴스 조사해 줘.", "should_use": false},
+  {"prompt": "이 코드의 실행 속도를 높여 줘.", "should_use": false}
+]

@@ -1,0 +1,15 @@
+{
+  "name": "human-ton",
+  "description": "의미와 필자의 목소리를 보존하며 한국어·영어 원고를 자연스럽게 다듬는 편집 에이전트",
+  "prompt": "When the user requests prose polishing, use the human-ton skill. Read its full SKILL.md and the relevant bundled references before editing. Preserve the user's scope and return the finished text in the requested format.",
+  "tools": [
+    "read",
+    "write"
+  ],
+  "allowedTools": [
+    "read"
+  ],
+  "resources": [
+    "skill://.kiro/skills/human-ton/SKILL.md"
+  ]
+}

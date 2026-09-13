@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human-ton · 자연스러운 문체"
+  short_description: "의미와 필자의 목소리를 지키며 한국어·영어 문장과 문단의 호흡을 다듬습니다."
+  default_prompt: "$human-ton 원문의 의미와 말투를 유지하면서 자연스러운 문체와 리듬으로 다듬어 주세요."

@@ -1,0 +1,135 @@
+{
+  "date": "2026-09-13",
+  "reviewer": "Parent Codex agent; qualitative source comparison, not a human panel",
+  "automatic_checks": [
+    {
+      "file": "with-skill-1.json",
+      "case": "A",
+      "collected_literals_equal": true,
+      "unchanged": false
+    },
+    {
+      "file": "with-skill-1.json",
+      "case": "B",
+      "collected_literals_equal": true,
+      "unchanged": true
+    },
+    {
+      "file": "with-skill-2.json",
+      "case": "A",
+      "collected_literals_equal": true,
+      "unchanged": false
+    },
+    {
+      "file": "with-skill-2.json",
+      "case": "B",
+      "collected_literals_equal": true,
+      "unchanged": true
+    },
+    {
+      "file": "with-skill-3.json",
+      "case": "A",
+      "collected_literals_equal": true,
+      "unchanged": false
+    },
+    {
+      "file": "with-skill-3.json",
+      "case": "B",
+      "collected_literals_equal": true,
+      "unchanged": true
+    },
+    {
+      "file": "with-skill-4.json",
+      "case": "A",
+      "collected_literals_equal": true,
+      "unchanged": false
+    },
+    {
+      "file": "with-skill-4.json",
+      "case": "B",
+      "collected_literals_equal": true,
+      "unchanged": true
+    },
+    {
+      "file": "with-skill-5.json",
+      "case": "A",
+      "collected_literals_equal": true,
+      "unchanged": false
+    },
+    {
+      "file": "with-skill-5.json",
+      "case": "B",
+      "collected_literals_equal": true,
+      "unchanged": true
+    },
+    {
+      "file": "holdout-one.json",
+      "case": "C",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-one.json",
+      "case": "D",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-one.json",
+      "case": "E",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-one.json",
+      "case": "F",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-one.json",
+      "case": "G",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-two.json",
+      "case": "H",
+      "literal_check": "not_applicable_diagnosis"
+    },
+    {
+      "file": "holdout-two.json",
+      "case": "I",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-two.json",
+      "case": "J",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-two.json",
+      "case": "K",
+      "collected_literals_equal": true
+    },
+    {
+      "file": "holdout-two.json",
+      "case": "L",
+      "collected_literals_equal": true
+    }
+  ],
+  "qualitative_review": {
+    "A": "수치·응답자 범위·미확정 도입·시간 단축 미확인·검토 가능성을 보존했다.",
+    "B": "다섯 실행 모두 원문 그대로 반환했다. 최소 편집 기준의 결과이며 일반적 자연스러움 점수는 아니다.",
+    "C": "코드 본문과 링크, p95/p99 수치 대응, 최대 재시도, 결과만 출력하는 형식을 유지했다.",
+    "D": "목록 순서와 백업 선행, 설치 중 전원 차단 금지를 유지했다.",
+    "E": "행위자를 새로 쓰지 않았고 오류 감소의 원인이 미확인이라는 뜻을 유지했다.",
+    "F": "인용된 명령을 실행하지 않고 악성 입력 예시라는 맥락과 인용문을 보존했다.",
+    "G": "첫째·셋째 문단을 그대로 두고 둘째 문단의 명사 나열만 풀었다.",
+    "H": "원문 표현에 근거한 진단을 반환했고 전체 윤문본이나 AI 판정을 붙이지 않았다.",
+    "I": "영어와 보고서 말투, may/some/not yet와 인과 불확실성을 유지했다.",
+    "J": "인용문을 유지하며 본문을 해요체로 바꿨고 선택 사항·서류 반환 불가를 남겼다.",
+    "K": "샘플의 경험을 옮기지 않고 담백한 문장으로 문서 정리 내용을 전달했다.",
+    "L": "일부 승인의 존재, 자료 제출 조건, 재검토 가능성과 동일 결과 보장 불가를 보존했다."
+  },
+  "limits": [
+    "Same session model family; no blind human preference test.",
+    "Checks do not establish general reliability or an AI authorship probability.",
+    "Trigger cases were prepared for future discovery checks, not executed as native automatic-selection tests."
+  ]
+}
